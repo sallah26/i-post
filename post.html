@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-Post/Posts</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.esm.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <style>
+    .card {
+      margin: 5% 3%;
+    }
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      margin-left: 10px;
+      margin-top: 13px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .col-lg-9 p {
+      font-size: 17px;
+      /* margin-left: -19px; */
+    }
+    .col-lg-9 h5 {
+      /* margin: 1px 0 0 -19px; */
+    }
+    .card-header {
+      /* width: auto; */
+      /* max-height: 100px; */
+      padding: 5px;
+      margin-bottom: -10px;
+    }
+    span {
+      font-size: 16px;
+      color: blue;
+    }
+    .card-footer a {
+      margin-left: -10px;
+      padding-left: 30px;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg text-white">
+      <a class="nav-link navbar-brand" href="">
+        <img src="images/logo-removebg-preview.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--  -->
+      <!--  -->
+      <nav
+        class="offcanvas offcanvas-end"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Backdrop with and
+          </h5>
+        </div>
+        <div class="offcanvas-body justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item text-white">
+              <a class="nav-link text-white" href="">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                contact
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Telegram</a></li>
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li><a class="dropdown-item" href="#">TikTok</a></li>
+                <li><a class="dropdown-item" href="#">Fellow</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Gmail-[preferd]</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="sgn-in.html">Sign-up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-6 col-xs-6">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3 col-sm-3 col-md-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9 col-sm-9 col-md-9">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-sm-7">
+                  <h5>Selahadin Hamid</h5>
+                  <p>
+                    software engineer | programmer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i>150 followers</span
+                    >
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i>150 likes</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.atural lead-in to additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
+              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
+              <a href="#" class="card-link"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-danger">
+      <div class="row">
+        <div class="col-xs-6"><h1>hello world</h1></div>
+        <div class="col-xs-6"><h1>hellow rold</h1></div>
+      </div>
+    </div>
+  </body>
+</html>
