@@ -31,15 +31,15 @@
     }
     .col-lg-9 p {
       font-size: 17px;
-      /* margin-left: -19px; */
+      margin: -11px 0 0 -19px;
     }
     .col-lg-9 h5 {
-      /* margin: 1px 0 0 -19px; */
+      margin: 8px 0 0 -19px;
     }
     .card-header {
-      /* width: auto; */
-      /* max-height: 100px; */
-      padding: 5px;
+      width: auto;
+      max-height: 100px;
+      padding: 1px;
       margin-bottom: -10px;
     }
     span {
@@ -50,12 +50,50 @@
       margin-left: -10px;
       padding-left: 30px;
     }
+    .hover-button {
+      position: relative;
+    }
+
+    #hover-button:hover:before {
+      content: "Like";
+      position: absolute;
+      top: 220px; /* Adjust the top position as needed */
+      margin-left: -20px;
+      background-color: transparent; /* Adjust the background color as needed */
+      padding: 5px;
+      border-radius: 4px;
+      color: darkolivegreen;
+      font-size: 16px;
+    }
+    #hover-button1:hover:before {
+      content: "Comment";
+      position: absolute;
+      top: 220px; /* Adjust the top position as needed */
+      margin-left: -20px;
+      background-color: transparent; /* Adjust the background color as needed */
+      padding: 5px;
+      border-radius: 4px;
+      color: darkolivegreen;
+      font-size: 16px;
+    }
+    #hover-button2:hover:before {
+      content: "Share";
+      position: absolute;
+      top: 220px; /* Adjust the top position as needed */
+      margin-left: -20px;
+      background-color: transparent; /* Adjust the background color as needed */
+      padding: 5px;
+      border-radius: 4px;
+      color: darkolivegreen;
+      font-size: 16px;
+    }
   </style>
   <body>
     <nav class="navbar navbar-expand-lg text-white">
       <a class="nav-link navbar-brand" href="">
         <img src="images/logo-removebg-preview.png" alt="logo" />
       </a>
+      <button class="hover-button">Button</button>
       <button
         class="navbar-toggler"
         type="button"
@@ -193,9 +231,13 @@
               </p>
             </div>
             <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
                 ><i class="fa fa-mail-forward"></i
               ></a>
             </div>
@@ -758,10 +800,33 @@
         </div>
       </div>
     </div>
-
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-title="Tooltip on top"
+    >
+      Tooltip on top
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="custom-tooltip"
+      data-bs-title="This top tooltip is themed via CSS variables."
+    >
+      Custom tooltip
+    </button>
+    <div class="button-wrapper">
+      <span class="hover-text">Hover Text</span>
+      <button class="hover-button">Button</button>
+    </div>
     <div class="card text-danger">
       <div class="row">
         <div class="col-xs-6"><h1>hello world</h1></div>
+
         <div class="col-xs-6"><h1>hellow rold</h1></div>
       </div>
     </div>
