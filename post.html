@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="style2.css" />
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.esm.min.js"></script>
     <!-- Font Awesome -->
@@ -58,43 +59,57 @@
     #hover-button:hover:before {
       content: "Like";
       position: absolute;
-      top: 220px; /* Adjust the top position as needed */
-      margin-left: -20px;
+      top: 200px; /* Adjust the top position as needed */
+      margin-left: -10px;
       background-color: transparent; /* Adjust the background color as needed */
       padding: 5px;
       border-radius: 4px;
-      color: darkolivegreen;
+      color: rgb(0, 38, 255);
       font-size: 16px;
     }
     #hover-button1:hover:before {
       content: "Comment";
       position: absolute;
-      top: 220px; /* Adjust the top position as needed */
-      margin-left: -20px;
+      top: 200px; /* Adjust the top position as needed */
+      margin-left: -30px;
       background-color: transparent; /* Adjust the background color as needed */
       padding: 5px;
       border-radius: 4px;
-      color: darkolivegreen;
+      color: rgb(0, 38, 255);
       font-size: 16px;
     }
     #hover-button2:hover:before {
       content: "Share";
       position: absolute;
-      top: 220px; /* Adjust the top position as needed */
+      top: 200px; /* Adjust the top position as needed */
       margin-left: -20px;
       background-color: transparent; /* Adjust the background color as needed */
       padding: 5px;
       border-radius: 4px;
-      color: darkolivegreen;
+      color: rgb(0, 38, 255);
+
       font-size: 16px;
     }
   </style>
   <body>
-    <nav class="navbar navbar-expand-lg text-white">
-      <a class="nav-link navbar-brand" href="">
+    <nav
+      class="navbar navbar-expand-xxl text-white bg-dark"
+      style="
+        margin: 0 0px 0 0;
+        padding: 0% 12%;
+        position: fixed;
+        z-index: 3;
+        max-width: 100%;
+        background-image: url('images/wepik-export-20230911170142VBOh.png');
+        /* background-repeat: none; */
+        background-position: center;
+        /* background-size: cover; */
+      "
+    >
+      <a class="nav-link navbar-brand" href="" style="margin-left: -100px">
         <img src="images/logo-removebg-preview.png" alt="logo" />
       </a>
-      <button class="hover-button">Button</button>
+      <!-- <button class="hover-button">Button</button> -->
       <button
         class="navbar-toggler"
         type="button"
@@ -126,8 +141,8 @@
             Backdrop with and
           </h5>
         </div>
-        <div class="offcanvas-body justify-content-end">
-          <ul class="navbar-nav">
+        <div class="offcanvas-body justify-content-lg-start">
+          <ul class="navbar-nav" style="left: 0">
             <li class="nav-item text-white">
               <a class="nav-link text-white" href="">Home</a>
             </li>
@@ -154,50 +169,96 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="">About</a>
+            <li class="nav-item" style="width: 111px">
+              <a class="nav-link text-white" href="sgn-in.html">Sign-up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="sgn-in.html">Sign-up</a>
+              <a class="nav-link text-white" href="">About</a>
             </li>
           </ul>
         </div>
       </nav>
+
+      <!-- <a href="" style="margin-left: 1280px; position: absolute"> -->
+      <!-- <img src="images/profile-pic (4).png" alt="" /> -->
+      <!-- </a> -->
+
+      <div class="dropdown" style="margin-left: 1240px; position: absolute">
+        <a
+          class="dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="images/profile-pic (4).png" alt="" />
+        </a>
+
+        <ul
+          class="dropdown-menu"
+          style="margin-left: -70px; background-color: #eeeeee"
+        >
+          <li><a class="dropdown-item" href="#">Add post</a></li>
+          <li><hr class="dropdown-divider" /></li>
+
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">About</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Followers</a></li>
+          <li><a class="dropdown-item" href="#">TikTok</a></li>
+          <li><a class="dropdown-item" href="#">Posts</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">Gmail</a>
+            <a class="dropdown-item" href="#">Telegram</a>
+            <a class="dropdown-item" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-header">
               <div class="row">
-                <div class="col-sm-3">
+                <div class="col-lg-3">
                   <img src="images/profile-pic (4).png" alt="" />
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-9">
+                <div class="col-lg-9">
                   <h5>Selahadin Hamid</h5>
                   <p>
                     software engineer | programmer<br />
                     <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
+                      <i class="fa fa-child"></i> 150 followers
+                    </span>
                     |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
+                    <span class="label label-primary"></span>
+                    <span><i class="fa fa-heart"></i> 150 likes</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="card-body">
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
+                With supporting text below as a natural lead <br />......
+                <br />
+                -in to additional content.atural lead-in tobelow as a natural
+                lead-in to additional content.atural lead-in tobelow as a
+                natural lead-in lead-in to additional content.atural lead-in to
+                additional content<span style="color: blue; font-size: 17px"
+                  >....see more</span
+                >
               </p>
             </div>
             <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
                 ><i class="fa fa-mail-forward"></i
               ></a>
             </div>
@@ -211,24 +272,309 @@
                   <img src="images/profile-pic (4).png" alt="" />
                 </div>
                 <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
+                  <h5>Emma Thompson</h5>
                   <p>
-                    software engineer | programmer<br />
+                    Content Writer | programmer<br />
                     <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
+                      <i class="fa fa-child"></i> 908 followers
+                    </span>
                     |
                     <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
+                      ><i class="fa fa-heart"></i> 550 likes
+                    </span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="card-body">
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
+                Mastering SEO Writing: Techniques for Better Online Visibility
+                lead-in to additional contentTechniques for Better Online
+                Visibility lead-in to additional contentTechniques for Better
+                Online Visibility lead-in to additional contentTechniques for
+                Better Online Visibility lead-in to additional content...<span
+                  style="color: blue; font-size: 17px"
+                  >see more</span
+                >
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Alex Ramirez</h5>
+                  <p>
+                    Data Analyst<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i> 2350 followers
+                    </span>
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i> 3200 likes
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Data Visualization: Communicating Insights Effectively
+                content.atural lead-inommunicating Insights Effectively
+                content.atural lead-inommunicating Insights Effectively
+                content.atural lead-inommunicating Insights Effectively
+                content.atural lead-in and also wht ever to additional
+                content...<span style="color: blue; font-size: 17px"
+                  >see more</span
+                >
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Sarah Patel</h5>
+                  <p>
+                    Marketing Specialist<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i> 4450 followers
+                    </span>
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i> 200 likes
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural Building a Strong Brand
+                Identity: Strategies for Successas a natural Building a Strong
+                Brand Identity: Strategies for a natural Building a Strong Brand
+                Identity: Strategies for a natural Building a Strong Brand
+                Identity: Strategies for a natural Building a Strong Brand
+                Identity: Strategies for Success...<span
+                  style="color: blue; font-size: 17px"
+                  >see more</span
+                >
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Michael Chen</h5>
+                  <p>
+                    UI/UX Designer<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i> 4350 followers
+                    </span>
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i> 5500 likes
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Designing User-Centric Interfaces: Best Practices and Case
+                Studies lead-in to additional contentBest Practices and Case
+                Studies lead-in to additional contentBest Practices and Case
+                Studies lead-in to additional contentBest Practices and Case
+                Studies lead-in to additional contentBest Practices and Case
+                Studies lead-in to additional content at the end...<span
+                  style="color: blue; font-size: 17px"
+                  >see more</span
+                >
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Laura Johnson</h5>
+                  <p>
+                    Fitness Instructor<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i> 10 followers
+                    </span>
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i> 150 likes
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                "Holistic Wellness: Nurturing Mind, Body, and Soul lead-in to
+                additional content.atural lead-in to additional Nurturing Mind,
+                Body, and Soul lead-in to additional content.atural lead-in to
+                additional Nurturing Mind, Body, and Soul lead-in to additional
+                content.atural lead-in to additional Nurturing Mind, Body, and
+                Soul lead-in to additional content.atural content...<span
+                  style="color: blue; font-size: 17px"
+                  >see more</span
+                >
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>David Thompson</h5>
+                  <p>
+                    Chef<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i> 2220 followers
+                    </span>
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i> 250 likes
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text below as a natural Gourmet Cooking at Home:
+                Elevate Your Culinary Skills...<span
+                  style="color: blue; font-size: 17px"
+                  >see more</span
+                >
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
+                ><i class="fa fa-mail-forward"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="images/profile-pic (4).png" alt="" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Rachel Lee</h5>
+                  <p>
+                    Fashion Stylist<br />
+                    <span class="label label-primary">
+                      <i class="fa fa-child"></i> 570 followers
+                    </span>
+                    |
+                    <span class="label label-primary"
+                      ><i class="fa fa-heart"></i> 130 likes
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                With supporting text Fashion Trends: Unleashing Creativity
+                through Personal Style additional content...<span
+                  style="color: blue; font-size: 17px"
+                  >see more</span
+                >
               </p>
             </div>
             <div class="card-footer">
@@ -256,12 +602,12 @@
                   <p>
                     software engineer | programmer<br />
                     <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
+                      <i class="fa fa-child"></i> 150 followers
+                    </span>
                     |
                     <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
+                      ><i class="fa fa-heart"></i> 150 likes
+                    </span>
                   </p>
                 </div>
               </div>
@@ -269,566 +615,25 @@
             <div class="card-body">
               <p class="card-text">
                 With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
+                content.atural lead-in to additional content...<span
+                  style="color: blue; font-size: 17px"
+                  >see more</span
+                >
               </p>
             </div>
             <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
+              <a href="#" class="card-link" id="hover-button"
+                ><i class="fa fa-gittip"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button1"
+                ><i class="fa fa-comment"></i
+              ></a>
+              <a href="#" class="card-link" id="hover-button2"
                 ><i class="fa fa-mail-forward"></i
               ></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-6 col-xs-6">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-3 col-sm-3 col-md-3">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-lg-9 col-sm-9 col-md-9">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-sm-5">
-                  <img src="images/profile-pic (4).png" alt="" />
-                </div>
-                <div class="col-sm-7">
-                  <h5>Selahadin Hamid</h5>
-                  <p>
-                    software engineer | programmer<br />
-                    <span class="label label-primary">
-                      <i class="fa fa-child"></i>150 followers</span
-                    >
-                    |
-                    <span class="label label-primary"
-                      ><i class="fa fa-heart"></i>150 likes</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.atural lead-in to additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="card-link"><i class="fa fa-gittip"></i></a>
-              <a href="#" class="card-link"><i class="fa fa-comment"></i></a>
-              <a href="#" class="card-link"
-                ><i class="fa fa-mail-forward"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-bs-toggle="tooltip"
-      data-bs-placement="top"
-      data-bs-title="Tooltip on top"
-    >
-      Tooltip on top
-    </button>
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-bs-toggle="tooltip"
-      data-bs-placement="top"
-      data-bs-custom-class="custom-tooltip"
-      data-bs-title="This top tooltip is themed via CSS variables."
-    >
-      Custom tooltip
-    </button>
-    <div class="button-wrapper">
-      <span class="hover-text">Hover Text</span>
-      <button class="hover-button">Button</button>
-    </div>
-    <div class="card text-danger">
-      <div class="row">
-        <div class="col-xs-6"><h1>hello world</h1></div>
-
-        <div class="col-xs-6"><h1>hellow rold</h1></div>
       </div>
     </div>
   </body>

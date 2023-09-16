@@ -1,0 +1,54 @@
+label {
+    display: block;
+    position: relative;
+    margin: 40px 0px;
+}
+
+.label-txt {
+    position: absolute;
+    top: -1.6em;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: .8em;
+    letter-spacing: 1px;
+    color: rgb(120, 120, 120);
+    transition: ease .3s;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+input {
+    position: relative;
+    width: 50%;
+    height: 2px;
+    margin: 3% 4%;
+    margin-left: 40%;
+    /* margin: -12px 0 0 43%; */
+    background: #BCBCBC;
+    color: white;
+    }
+
+.line {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8BC34A;
+    transition: ease .6s;
+}
+
+.input:focus+.line-box .line {
+    width: 40%;
+}
+
+.label-active {
+    top: -3em;
+}
