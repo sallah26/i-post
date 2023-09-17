@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-Post / Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.esm.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+<script src="js/jquery.min.js"></script>
+  </head>
+  <style>
+    img {
+      width: 40px;
+      /* height: 00px; */
+      margin: 5% 2%;
+    }
+    nav {
+      height: 16vh;
+    }
+
+form {
+  width: 60%;
+  height: 50vh;
+  margin: 60px auto;
+  background: #efefef;
+  padding: 60px 120px 80px 120px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 13px 13px 9px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  position: relative;
+  margin: 40px 0px;
+}
+.label-txt {
+  position: absolute;
+  top: -1.6em;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: .8em;
+  letter-spacing: 1px;
+  color: rgb(120,120,120);
+  transition: ease .3s;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.line-box {
+  background: #BCBCBC;
+}
+
+.line {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(77, 77, 255);
+  transition: ease .6s;
+}
+
+.input:focus + .line-box .line {
+  width: 100%;
+}
+
+.label-active {
+  top: -3em;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgb(220,220,220);
+  font-weight: bold;
+  color: rgb(120,120,120);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+}
+
+.btn{
+    width: 45%;
+    height: 22%;
+}
+
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg text-white bg-dark" 
+        style="
+        background-image: url('images/wepik-export-20230911170142VBOh.png');
+        background-repeat: none; 
+        background-position: center;
+        background-size: cover;">
+      <a class="nav-link navbar-brand" href="" style="margin-left: 5%">
+        <img src="images/logo-removebg-preview.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav
+        class="offcanvas offcanvas-end"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Backdrop with and
+          </h5>
+        </div>
+        <div class="offcanvas-body justify-content-lg-start">
+          <ul class="navbar-nav" style="left: 0">
+            <li class="nav-item text-white">
+              <a class="nav-link text-white" href="">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                contact
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Telegram</a></li>
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li><a class="dropdown-item" href="#">TikTok</a></li>
+                <li><a class="dropdown-item" href="#">Fellow</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Gmail-[preferd]</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" style="width: 111px">
+              <a class="nav-link text-white" href="sgn-in.html">Sign-up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     <div class="dropdown" style="margin-left: 1440px; position: absolute">
+        <a
+          class="dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="images/profile-pic (4).png" alt="" />
+        </a>
+
+        <ul
+          class="dropdown-menu"
+          style="margin-left: -70px; background-color: #eeeeee"
+        >
+          <li><a class="dropdown-item" href="#">Add post</a></li>
+          <li><hr class="dropdown-divider" /></li>
+
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">About</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Followers</a></li>
+          <li><a class="dropdown-item" href="#">TikTok</a></li>
+          <li><a class="dropdown-item" href="#">Posts</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">Gmail</a>
+            <a class="dropdown-item" href="#">Telegram</a>
+            <a class="dropdown-item" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </nav>
+    <div class="text-center " style="margin-top: 32px;">
+    <h2>What is on your mind? <br> Put it Here...</h2></div>
+<form style="margin-top: -8px;">
+  <label>
+    <p class="label-txt">TYPE YOUR IDEA HERE</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <a href="" class="btn btn-outline-primary ">POST IT</a>
+  <!-- <button type="submit">submit</button> -->
+</form>
+  </body>
+</html>
+
+  
